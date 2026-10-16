@@ -1,0 +1,73 @@
+# ==========================================
+# Vulto OS - Git Ignore
+# ==========================================
+
+# Archiso build output
+/iso/work/
+/iso/out/
+
+# Generated ISO and image files
+*.iso
+*.iso.sig
+*.img
+*.img.sig
+*.qcow2
+*.vdi
+*.vmdk
+
+# Local package repository and package archives
+/iso/repo/*.pkg.tar
+/iso/repo/*.pkg.tar.*
+/iso/repo/*.db
+/iso/repo/*.db.*
+/iso/repo/*.files
+/iso/repo/*.files.*
+
+# Package and build caches
+/var/cache/pacman/pkg/
+/pkg/
+/src/
+
+# Build logs and temporary files
+*.log
+*.tmp
+*.temp
+*.bak
+*.old
+*~
+
+# Backup directories
+/backups/
+/backup/
+/iso/backups/
+/iso/profile-backup-*/
+/iso/profile/backup/
+
+# Editor and IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Local environment and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+secrets/
+credentials/
+
+# Temporary operating system files
+.Trash-*/
+lost+found
+
+# Python caches (if used by development tools)
+__pycache__/
+*.py[cod]
+
+# ==========================================
+# End of file
+# ==========================================
