@@ -1,0 +1,12 @@
+[Unit]
+Description=Configuração do usuário live do Vulto OS
+After=local-fs.target
+Before=display-manager.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/bin/vulto-live-setup
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

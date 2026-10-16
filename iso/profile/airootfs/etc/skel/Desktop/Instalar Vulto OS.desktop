@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=Instalar Vulto OS
+GenericName=Instalador do sistema
+Comment=Instale o Vulto OS neste computador
+Exec=sh -c "pkexec calamares"
+Icon=calamares
+Terminal=false
+StartupNotify=true
+Categories=System;

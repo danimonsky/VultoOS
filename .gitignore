@@ -1,34 +1,21 @@
-# ==========================================
-# Vulto OS - Git Ignore
-# ==========================================
-
-# Archiso build output
+# Archiso: arquivos gerados
 /iso/work/
+/iso/repo/
 /iso/out/
+/iso/*.iso
+/iso/*.iso.sig
+/iso/*.img
+/iso/*.img.sig
+/iso/*.qcow2
+/iso/*.vdi
+/iso/*.vmdk
+/iso/*.pkg.tar
+/iso/*.pkg.tar.*
 
-# Generated ISO and image files
-*.iso
-*.iso.sig
-*.img
-*.img.sig
-*.qcow2
-*.vdi
-*.vmdk
-
-# Local package repository and package archives
-/iso/repo/*.pkg.tar
-/iso/repo/*.pkg.tar.*
-/iso/repo/*.db
-/iso/repo/*.db.*
-/iso/repo/*.files
-/iso/repo/*.files.*
-
-# Package and build caches
+# Cache e arquivos temporários
 /var/cache/pacman/pkg/
 /pkg/
 /src/
-
-# Build logs and temporary files
 *.log
 *.tmp
 *.temp
@@ -36,14 +23,14 @@
 *.old
 *~
 
-# Backup directories
+# Backups locais
 /backups/
 /backup/
 /iso/backups/
 /iso/profile-backup-*/
 /iso/profile/backup/
 
-# Editor and IDE files
+# Arquivos locais de editores
 .vscode/
 .idea/
 *.swp
@@ -51,23 +38,31 @@
 .DS_Store
 Thumbs.db
 
-# Local environment and credentials
+# Credenciais e segredos
 .env
 .env.*
 !.env.example
 *.pem
 *.key
+*.token
 secrets/
 credentials/
 
-# Temporary operating system files
+# Arquivos temporários do sistema
 .Trash-*/
 lost+found
 
-# Python caches (if used by development tools)
+# Cache Python
 __pycache__/
 *.py[cod]
 
-# ==========================================
-# End of file
-# ==========================================
+# Lista antiga de pacotes
+/iso/profile/packages.x86_64.backup*
+
+# Arquivos de autenticação da ISO live
+/iso/profile/airootfs/etc/shadow
+
+
+# Artefatos de compilação do Archiso
+/iso/out-check/
+/iso/work-check/

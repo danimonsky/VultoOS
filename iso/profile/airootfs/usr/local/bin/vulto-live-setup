@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+if ! id vulto >/dev/null 2>&1; then
+    useradd -m -U -s /bin/bash vulto
+fi
+
+for group in wheel audio video storage optical; do
+    if getent group "$group" >/dev/null 2>&1; then
+        usermod -aG "$group" vulto
+    fi
+done
+
+install -d -o vulto -g vulto /home/vulto/Desktop

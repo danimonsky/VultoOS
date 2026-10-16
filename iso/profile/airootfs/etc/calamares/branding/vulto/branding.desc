@@ -1,0 +1,28 @@
+componentName: vulto
+welcomeStyleCalamares: false
+welcomeExpandingLogo: true
+windowExpanding: normal
+windowSize: 900px,600px
+windowPlacement: center
+sidebar: widget
+navigation: widget
+strings:
+  productName: "Vulto OS"
+  shortProductName: "Vulto"
+  version: "1.0"
+  shortVersion: "1.0"
+  versionedName: "Vulto OS 1.0"
+  shortVersionedName: "Vulto OS"
+  bootloaderEntryName: "Vulto OS"
+  productUrl: ""
+  supportUrl: ""
+  knownIssuesUrl: ""
+  releaseNotesUrl: ""
+  donateUrl: ""
+style:
+  SidebarBackground: "#171717"
+  SidebarText: "#FFFFFF"
+  SidebarTextCurrent: "#FFFFFF"
+  SidebarBackgroundCurrent: "#5A189A"
+uploadServer:
+  type: none
